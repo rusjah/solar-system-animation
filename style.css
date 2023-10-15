@@ -53,7 +53,6 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 100%;
-    /* transform: rotate(0) translate(65px) rotate(0); */
     animation: merkurius-rotation 1s linear infinite;
 }
 
@@ -72,7 +71,6 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    /* transform: rotate(0) translate(65px) rotate(0); */
     animation: venus-rotation 1.5s linear infinite;
 }
 
@@ -91,9 +89,9 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    /* transform: rotate(0) translate(65px) rotate(0); */
     animation: earth-rotation 2s linear infinite;
 }
+
 .mars-container {
     position: absolute;
     display: flex;
@@ -109,8 +107,25 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    /* transform: rotate(0) translate(65px) rotate(0); */
     animation: mars-rotation 2.5s linear infinite;
+}
+
+.jupiter-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.jupiter-container img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation: jupiter-rotation 3s linear infinite;
 }
 
 @keyframes merkurius-rotation {
@@ -139,11 +154,21 @@ body {
         transform: rotate(360deg) translate(120px) rotate(360deg);
     }
 }
+
 @keyframes mars-rotation {
     0% {
         transform: rotate(0) translate(150px) rotate(0);
     }
     100% {
         transform: rotate(360deg) translate(150px) rotate(360deg);
+    }
+}
+
+@keyframes jupiter-rotation {
+    0% {
+        transform: rotate(0) translate(200px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(200px) rotate(360deg);
     }
 }
