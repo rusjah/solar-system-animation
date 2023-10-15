@@ -146,6 +146,24 @@ body {
     animation: saturn-rotation 3.5s linear infinite;
 }
 
+.uranus-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.uranus-container img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    animation: uranus-rotation 4s linear infinite;
+}
+
 @keyframes merkurius-rotation {
     0% {
         transform: rotate(0) translate(65px) rotate(0);
@@ -197,5 +215,14 @@ body {
     }
     100% {
         transform: rotate(360deg) translate(275px) rotate(360deg);
+    }
+}
+
+@keyframes uranus-rotation {
+    0% {
+        transform: rotate(0) translate(350px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(350px) rotate(360deg);
     }
 }
