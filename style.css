@@ -164,6 +164,24 @@ body {
     animation: uranus-rotation 4s linear infinite;
 }
 
+.neptun-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.neptun-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    animation: neptun-rotation 4.5s linear infinite;
+}
+
 @keyframes merkurius-rotation {
     0% {
         transform: rotate(0) translate(65px) rotate(0);
@@ -224,5 +242,14 @@ body {
     }
     100% {
         transform: rotate(360deg) translate(350px) rotate(360deg);
+    }
+}
+
+@keyframes neptun-rotation {
+    0% {
+        transform: rotate(0) translate(400px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(400px) rotate(360deg);
     }
 }
