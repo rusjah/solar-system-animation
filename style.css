@@ -38,3 +38,33 @@ body {
     z-index: 0;
 }
 
+.mercurius-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.mercurius-container img{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* transform: rotate(0) translate(65px) rotate(0); */
+    animation: merkurius-rotation 1s linear infinite;
+}
+
+
+
+@keyframes merkurius-rotation {
+    0% {
+        transform: rotate(0) translate(65px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(65px) rotate(360deg);
+    }
+}
+
