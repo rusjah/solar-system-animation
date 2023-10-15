@@ -57,7 +57,24 @@ body {
     animation: merkurius-rotation 1s linear infinite;
 }
 
+.venus-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
 
+.venus-container img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    /* transform: rotate(0) translate(65px) rotate(0); */
+    animation: venus-rotation 1.5s linear infinite;
+}
 
 @keyframes merkurius-rotation {
     0% {
@@ -68,3 +85,11 @@ body {
     }
 }
 
+@keyframes venus-rotation {
+    0% {
+        transform: rotate(0) translate(90px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(90px) rotate(360deg);
+    }
+}
