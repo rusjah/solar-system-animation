@@ -94,6 +94,24 @@ body {
     /* transform: rotate(0) translate(65px) rotate(0); */
     animation: earth-rotation 2s linear infinite;
 }
+.mars-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.mars-container img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    /* transform: rotate(0) translate(65px) rotate(0); */
+    animation: mars-rotation 2.5s linear infinite;
+}
 
 @keyframes merkurius-rotation {
     0% {
@@ -119,5 +137,13 @@ body {
     }
     100% {
         transform: rotate(360deg) translate(120px) rotate(360deg);
+    }
+}
+@keyframes mars-rotation {
+    0% {
+        transform: rotate(0) translate(150px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(150px) rotate(360deg);
     }
 }
